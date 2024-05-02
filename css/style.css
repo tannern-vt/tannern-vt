@@ -204,6 +204,24 @@ img {
     color: inherit;
 }
 
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+  }
+
+  .embed-container iframe,
+  .embed-container object,
+  .embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
 /* Media queries allow you to change style properties according to the screen width. In this case, if the screen is AT LEAST 540 pixels wide (bigger than a standard phone), the .container resizes to 540 pixels and the buttons and intro resize to 85% of the container width */
 @media (min-width: 540px) {
     .container {
